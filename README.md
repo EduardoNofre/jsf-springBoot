@@ -443,5 +443,5 @@ Abaixo explico o que cada linhas faz:
 ## A saida deve ser algo assim.
 
 <p align="center">
-  <img src="https://github.com/EduardoNofre/jsf-springBoot/blob/main/springterminalrun.gif" alt="Sublime's custom image"/>  
+  <img src="https://github.com/EduardoNofre/jsf-springBoot/blob/main/testeJSF002s.gif" alt="Sublime's custom image"/>  
 </p>
