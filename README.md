@@ -142,6 +142,7 @@ Vejamos o POM.xml apos a criação como esta?<br>
               	</scm>
               	<properties>
               		<java.version>17</java.version>
+                 <joinfaces.version>5.0.0</joinfaces.version>
               	</properties>
               	<dependencies>
               		<dependency>
@@ -195,6 +196,7 @@ Vejamos o POM.xml apos a criação como esta?<br>
             
             	<properties>
             		<java.version>17</java.version>
+               <joinfaces.version>5.0.0</joinfaces.version>
             	</properties>
             	<dependencies>
             		<dependency>
