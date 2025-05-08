@@ -248,8 +248,8 @@ Vejamos o POM.xml apos a criação como esta?<br>
 </h1>
 
   - **Pacote**.
-      - br.com.JoinFaces.app.bean
-      - Aind nesse pacote iremos criar a nossa classe bean.
+      - O pacote **br.com.JoinFaces.app.bean.**
+      - Ainda nesse pacote iremos criar a nossa classe bean.
       
   - **Vamos criar a classe HelloWorldBean.java**.
       - A classe deve ser craida na raiz do **br.com.JoinFaces.app.bean**.
@@ -293,7 +293,7 @@ Vejamos o POM.xml apos a criação como esta?<br>
 
   - **Pasta**.
       - **webapp** nessa paste ire ficar as suas paginas.
-      - src/main/webapp
+      -  A pasta **src/main/webapp**
 
    - **Vamos criar a pagina index.xhtml**.
       - A pagina deve ser craida na raiz do **webapp**.
