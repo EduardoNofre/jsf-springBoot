@@ -286,13 +286,13 @@ Vejamos o POM.xml apos a criação como esta?<br>
     Vamos criar uma pasta e a pagina index.xhtml no eclipse.
 </h1>
 
-    - **Pasta**.
-        - webapp nessa paste ire ficar as suas paginas.
-        - src/main/webapp
+  - **Pasta**.
+      - webapp nessa paste ire ficar as suas paginas.
+      - src/main/webapp
 
-     - **Vamos criar a pagina index.xhtml**.
-        - A pagina deve ser craida na raiz do webapp.
-        - Deve ficar assim src/main/webapp/index.xhtml.
+   - **Vamos criar a pagina index.xhtml**.
+      - A pagina deve ser craida na raiz do webapp.
+      - Deve ficar assim src/main/webapp/index.xhtml.
 
  **A pagina:** 
 
