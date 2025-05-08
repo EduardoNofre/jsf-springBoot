@@ -61,3 +61,17 @@ Elimina a necessidade de configurar manualmente o web.xml, faces-config.xml e ou
 
 Facilita a criação de projetos spring boot com JSF evita configuração complexas.
 
+<h1 align="center">
+   Requisito mínimo antes de começa.
+</h1>
+
+Projeto passo a passo jsf.
+  - Projeto spring starter
+  - Java 17 +
+  - Eclipse STS
+  - JoinFaces
+  - Pagina jsf.
+  - Classe bean utilizando @Named e @RequestScoped.
+  - Utilizando o tomcat do proprio spring boot.
+
+
