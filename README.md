@@ -347,7 +347,9 @@ Abaixo explico o que cada linhas faz:
 			
 			# Porta onde a aplicacao sera executada
 			server.port=8090
-			server.servlet.context-path=/HelloWorld
+   
+			# contexto
+   			server.servlet.context-path=/HelloWorld
 			
 			# Ignora comentarios no codigo XHTML para melhorar performance de renderizacao
 			joinfaces.servlet.initial-parameters.faces-config.FACELETS_SKIP_COMMENTS=true
