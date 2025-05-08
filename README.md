@@ -342,26 +342,27 @@ Mas para este exemplo será usado um **.properties**
 
 Abaixo explico o que cada linhas faz:
 
-              # Nome da aplicação
-              spring.application.name=HelloWorld-JoinFaces
-              
-              # Porta onde a aplicação será executada
-              server.port=8090
-              
-              # Ignora comentários no código XHTML para melhorar performance de renderização
-              joinfaces.servlet.initial-parameters.faces-config.FACELETS_SKIP_COMMENTS=true
-                      
-              # Define o mapeamento das páginas JSF para terminarem com .xhtml
-              joinfaces.faces-servlet-mapping=*.xhtml
-                      
-              # Define que os arquivos com extensão .xhtml são tratados como páginas JSF
-              joinfaces.faces-view-suffix=.xhtml
-                      
-              # Define o tema visual do PrimeFaces (neste caso, "saga", que é um tema moderno e claro)
-              joinfaces.primefaces.theme=saga
-                      
-              # Habilita o uso do Font Awesome nos componentes do PrimeFaces (ícones)
-              joinfaces.primefaces.font-awesome=true
+			# Nome da aplicacao
+			spring.application.name=HelloWorld-JoinFaces
+			
+			# Porta onde a aplicacao sera executada
+			server.port=8090
+			server.servlet.context-path=/HelloWorld
+			
+			# Ignora comentarios no codigo XHTML para melhorar performance de renderizacao
+			joinfaces.servlet.initial-parameters.faces-config.FACELETS_SKIP_COMMENTS=true
+			        
+			# Define o mapeamento das paginas JSF para terminarem com .xhtml
+			joinfaces.faces-servlet-mapping=*.xhtml
+			        
+			# Define que os arquivos com extensao .xhtml sao tratados como paginas JSF
+			joinfaces.faces-view-suffix=.xhtml
+			        
+			# Define o tema visual do PrimeFaces (neste caso, "saga", que e um tema moderno e claro)
+			joinfaces.primefaces.theme=saga
+			        
+			# Habilita o uso do Font Awesome nos componentes do PrimeFaces (icones)
+			joinfaces.primefaces.font-awesome=true
 
   ## Imagem .properties e sua localização:
 <p align="center">
