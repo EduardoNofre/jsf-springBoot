@@ -111,7 +111,7 @@ Configurar o pom.xml com JoinFaces e PrimeFaces.
 
 Vejamos o POM.xml apos a criação como esta?
 
-Antes da inclusão de algumas libs/dependencias.<br>
+## Antes da inclusão de algumas libs/dependencias.<br>
 
               <?xml version="1.0" encoding="UTF-8"?>
               <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -167,3 +167,78 @@ Antes da inclusão de algumas libs/dependencias.<br>
               	</build>
               </project>
 
+## Vamos incluir algumas libs/dependencias.<br>
+São elas:
+    - <!-- JoinFaces (inclui JSF, CDI e PrimeFaces) -->
+    - <!-- JSF Bean Management (CDI) -->
+    - <!-- Servlet API -->
+
+## Veja como ficou o POM.xml
+
+            <?xml version="1.0" encoding="UTF-8"?>
+            <project xmlns="http://maven.apache.org/POM/4.0.0"
+            	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+            	<modelVersion>4.0.0</modelVersion>
+            	
+            	<parent>
+            		<groupId>org.springframework.boot</groupId>
+            		<artifactId>spring-boot-starter-parent</artifactId>
+            		<version>3.4.5</version>
+            		<relativePath /> <!-- lookup parent from repository -->
+            	</parent>
+            	
+            	<groupId>br.com.JoinFaces.app</groupId>
+            	<artifactId>HelloWorld-JoinFaces</artifactId>
+            	<version>1.0.0</version>
+            	<name>HelloWorld-JoinFaces</name>
+            	<description>HelloWorld-JoinFaces estudo join faces</description>
+            
+            	<properties>
+            		<java.version>17</java.version>
+            	</properties>
+            	<dependencies>
+            		<dependency>
+            			<groupId>org.springframework.boot</groupId>
+            			<artifactId>spring-boot-starter-web</artifactId>
+            		</dependency>
+            
+            		<dependency>
+            			<groupId>org.springframework.boot</groupId>
+            			<artifactId>spring-boot-starter-test</artifactId>
+            			<scope>test</scope>
+            		</dependency>
+            
+            		<!-- JoinFaces (inclui JSF, CDI e PrimeFaces) -->
+            		<dependency>
+            			<groupId>org.joinfaces</groupId>
+            			<artifactId>joinfaces</artifactId>
+            		</dependency>
+            
+            		<!-- JSF Bean Management (CDI) -->
+            		<dependency>
+            			<groupId>jakarta.enterprise</groupId>
+            			<artifactId>jakarta.enterprise.cdi-api</artifactId>
+            			<version>4.0.1</version>
+            			<scope>provided</scope>
+            		</dependency>
+            
+            		<!-- Servlet API -->
+            		<dependency>
+            			<groupId>jakarta.servlet</groupId>
+            			<artifactId>jakarta.servlet-api</artifactId>
+            			<version>6.0.0</version>
+            			<scope>provided</scope>
+            		</dependency>
+            
+            	</dependencies>
+            
+            	<build>
+            		<plugins>
+            			<plugin>
+            				<groupId>org.springframework.boot</groupId>
+            				<artifactId>spring-boot-maven-plugin</artifactId>
+            			</plugin>
+            		</plugins>
+            	</build>
+            </project>
