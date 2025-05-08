@@ -107,9 +107,8 @@ Projeto passo a passo jsf.<br>
 
 ## Configurando o pom.xml
 
-Configurar o pom.xml com JoinFaces e PrimeFaces.
-
-Vejamos o POM.xml apos a criação como esta?
+Configurar o pom.xml com JoinFaces e PrimeFaces.<br>
+Vejamos o POM.xml apos a criação como esta?<br>
 
 ## Antes da inclusão de algumas libs/dependencias.<br>
 
@@ -169,9 +168,9 @@ Vejamos o POM.xml apos a criação como esta?
 
 ## Vamos incluir algumas libs/dependencias.<br>
 São elas:
-    - <!-- JoinFaces (inclui JSF, CDI e PrimeFaces) -->
-    - <!-- JSF Bean Management (CDI) -->
-    - <!-- Servlet API -->
+      - <!-- JoinFaces (inclui JSF, CDI e PrimeFaces) -->
+      - <!-- JSF Bean Management (CDI) -->
+      - <!-- Servlet API -->
 
 ## Veja como ficou o POM.xml
 
