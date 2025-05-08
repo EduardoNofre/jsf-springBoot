@@ -242,3 +242,37 @@ Vejamos o POM.xml apos a criação como esta?<br>
             	</build>
             </project>
             
+## Vamos criar um pacote no eclipse.
+      - br.com.JoinFaces.app.bean
+      - Aind nesse pacote iremos criar a nossa classe bean.
+      
+  **A classe:**
+    
+              package br.com.JoinFaces.app.bean;
+              
+              import jakarta.enterprise.context.RequestScoped;
+              import jakarta.inject.Named;
+              
+              @Named("meuBean")
+              @RequestScoped
+              public class HelloWorldBean {
+                  private String nome;
+              
+                  public void enviar() {
+                      System.out.println("Nome recebido: " + nome);
+                  }
+              
+                  public String getNome() {
+                      return nome;
+                  }
+              
+                  public void setNome(String nome) {
+                      this.nome = nome;
+                  }
+              }
+
+## Imagem:
+<p align="center">
+  <img src="https://github.com/EduardoNofre/jsf-springBoot/blob/main/bean.png" alt="Sublime's custom image"/>  
+</p>
+  
