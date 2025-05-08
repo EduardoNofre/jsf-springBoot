@@ -23,35 +23,41 @@
    O que é Spring boot?
 </h1>
 
-## O que é Spring boot?
+Spring Boot é um framework Java que facilita a criação de aplicações web e APIs de forma rápida e com pouca configuração.<br>Ele é uma ferramenta que faz parte do ecossistema do Spring Framework, mas com o foco em simplicidade e produtividade.<br>
+Um servidor embutido (como Tomcat ou Jetty);<br>
+Gerenciamento de dependências com o Maven ou Gradle;<br>
+Configurações padrão para não precisar criar tudo<br>
 
 <h1 align="center">
    O que é JSF? 
 </h1>
-
-## O que é JSF?
+JSF (JavaServer Faces) é um framework da plataforma Java usado para construir interfaces web baseadas em componentes. <br>Ele permite criar páginas web dinâmicas com Java, separando bem a lógica da aplicação da apresentação (HTML).<br>
+JSF ajuda você a criar páginas web interativas com Java, usando componentes prontos como botões, tabelas e formulários.<br>
+Ele facilita o vínculo entre a interface do usuário e o código Java, com suporte nativo para injeção de dependência e ciclo de vida dos componentes.<br>
 
 <h1 align="center">
    O que é PrimeFaces?
 </h1>
-
-## O que é  PrimeFaces?
+PrimeFaces é uma biblioteca de componentes gráficos para JSF (JavaServer Faces) que oferece uma grande variedade de componentes prontos e modernos, como tabelas, gráficos, menus, calendários, diálogos, entre outros.<br>
+PrimeFaces deixa suas páginas JSF muito mais bonitas, interativas e fáceis de usar, sem que você precise escrever muito HTML, CSS ou JavaScript.<br>
 
 <h1 align="center">
    O que é JoinFaces? 
 </h1>
-
-## O que é JoinFaces?
+JoinFaces facilita o uso de JSF (JavaServer Faces) dentro de uma aplicação Spring Boot, cuidando da configuração automática e integração entre as duas tecnologias.<br>
 
 <h1 align="center">
    Pra que serve JoinFaces? 
 </h1>
 
-## Pra que serve JoinFaces?
+Configura automaticamente o JSF dentro do Spring Boot.<br>
+Permite usar bibliotecas como PrimeFaces, OmniFaces, BootsFaces, etc.<br>
+Integra os beans do Spring com os managed beans do JSF, usando anotações como @Component e @Named sem conflito.<br>
+Elimina a necessidade de configurar manualmente o web.xml, faces-config.xml e outros arquivos.<br>
 
 <h1 align="center">
    Porque usa? 
 </h1>
 
-## Porque usa JoinFaces?
+Facilita a criação de projetos spring boot com JSF evita configuração complexas.
 
