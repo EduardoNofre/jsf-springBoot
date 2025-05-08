@@ -242,24 +242,28 @@ Vejamos o POM.xml apos a criação como esta?<br>
             	</build>
             </project>
             
-## Vamos criar um pacote no eclipse.
+
+<h1 align="center">
+   Vamos criar um pacote e a classe bean no eclipse.
+</h1>
+  - **Pacote**.
       - br.com.JoinFaces.app.bean
       - Aind nesse pacote iremos criar a nossa classe bean.
       
-  **A classe:**
+  **A classe:** 
     
               package br.com.JoinFaces.app.bean;
               
               import jakarta.enterprise.context.RequestScoped;
               import jakarta.inject.Named;
               
-              @Named("meuBean")
+              @Named
               @RequestScoped
               public class HelloWorldBean {
                   private String nome;
               
                   public void enviar() {
-                      System.out.println("Nome recebido: " + nome);
+                      System.out.println("Nome Exibido: " + nome);
                   }
               
                   public String getNome() {
@@ -271,8 +275,44 @@ Vejamos o POM.xml apos a criação como esta?<br>
                   }
               }
 
-## Imagem:
+  - **Deve ficar dentro src/main/java/br/com/JoinFaces/app/bean/HelloWorldBean.java**
+
+## Imagem da estrutura:
 <p align="center">
   <img src="https://github.com/EduardoNofre/jsf-springBoot/blob/main/bean.png" alt="Sublime's custom image"/>  
 </p>
   
+<h1 align="center">
+    Vamos criar uma pasta e a pagina index.xhtml no eclipse.
+</h1>
+
+    - **Pasta**.
+        - webapp nessa paste ire ficar as suas paginas.
+        - src/main/webapp
+
+     - **Vamos criar a pagina index.xhtml**.
+        - A pagina deve ser craida na raiz do webapp.
+        - Deve ficar assim src/main/webapp/index.xhtml.
+
+ **A pagina:** 
+
+               <!DOCTYPE html>
+            <html xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:h="jakarta.faces.html"
+                  xmlns:p="http://primefaces.org/ui">
+            <h:head>
+                <title>Página JSF com Spring Boot Hello World</title>
+            </h:head>
+            <h:body>
+                <h:form>
+                    <p:outputLabel value="Nome:" for="nome" />
+                    <p:inputText id="nome" value="#{helloBean.nome}" />
+                    <p:commandButton value="Enviar" action="#{helloBean.enviar}" update="@form" />
+                    <br/><br/>
+                    <p:outputLabel value="Digite qaulquer coisa aqui: #{helloBean.nome}" />
+                </h:form>
+            </h:body>
+            </html>
+
+
+
