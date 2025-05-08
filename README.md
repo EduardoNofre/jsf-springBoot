@@ -246,9 +246,14 @@ Vejamos o POM.xml apos a criação como esta?<br>
 <h1 align="center">
    Vamos criar um pacote e a classe bean no eclipse.
 </h1>
+
   - **Pacote**.
       - br.com.JoinFaces.app.bean
       - Aind nesse pacote iremos criar a nossa classe bean.
+      
+  - **Vamos criar a classe HelloWorldBean.java**.
+      - A classe deve ser craida na raiz do **br.com.JoinFaces.app.bean**.
+      - Deve ficar assim **src/main/java/br/com/JoinFaces/app/bean/HelloWorldBean.java**.
       
   **A classe:** 
     
@@ -287,16 +292,16 @@ Vejamos o POM.xml apos a criação como esta?<br>
 </h1>
 
   - **Pasta**.
-      - webapp nessa paste ire ficar as suas paginas.
+      - **webapp** nessa paste ire ficar as suas paginas.
       - src/main/webapp
 
    - **Vamos criar a pagina index.xhtml**.
-      - A pagina deve ser craida na raiz do webapp.
-      - Deve ficar assim src/main/webapp/index.xhtml.
+      - A pagina deve ser craida na raiz do **webapp**.
+      - Deve ficar assim **src/main/webapp/index.xhtml**.
 
  **A pagina:** 
 
-               <!DOCTYPE html>
+            <!DOCTYPE html>
             <html xmlns="http://www.w3.org/1999/xhtml"
                   xmlns:h="jakarta.faces.html"
                   xmlns:p="http://primefaces.org/ui">
