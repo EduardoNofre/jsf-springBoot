@@ -7,16 +7,17 @@
   Sumario  
 </h1>
 <p align="left">
-• <a href="#---docker-compose-">O que é Spring boot?</a><br>
-• <a href="#---keycloack-">O que é JSF?</a><br>
-• <a href="#--requisito-mínimo-antes-de-começar">O que é PrimeFaces?</a><br>   
-• <a href="#--arquivo-docker-composeyml">O que é JoinFaces?</a><br>  	  
-• <a href="#--arquivo-init-schemasql">Pra que serve JoinFaces?</a><br>  			
-• <a href="#--arquivo-init-schemasql">Porque usa?r</a><br>  
-• <a href="#--arquivo-init-schemasql">Requisito mínimo antes de começa</a><br>  
-• <a href="#--arquivo-init-schemasql">Exemplo de Projeto</a><br>  
-• <a href="#--arquivo-init-schemasql">Requisito mínimo antes de começa</a><br>  
-• <a href="#--arquivo-init-schemasql">Requisito mínimo antes de começa</a><br>  
+• <a href="#---o-que-é-spring-boot">O que é Spring boot?</a><br>
+• <a href="#---o-que-é-jsf-">O que é JSF?</a><br>
+• <a href="#---o-que-é-primefaces">O que é PrimeFaces?</a><br>   
+• <a href="#---o-que-é-joinfaces-">O que é JoinFaces?</a><br>  	  
+• <a href="#---pra-que-serve-joinfaces-">Pra que serve JoinFaces?</a><br>  			
+• <a href="#---porque-usa-">Porque usa?r</a><br>  
+• <a href="#---requisito-mínimo-antes-de-começa">Requisito mínimo antes de começa</a><br>  
+• <a href="#---helloworld-joinfaces">helloworld Joinfaces</a><br>  
+• <a href="#----vamos-criar-uma-pasta-e-a-pagina-indexhtml-no-eclipse">Vamos criar uma pasta e uma pagina index.html no eclipse</a><br>  
+• <a href="#--configurar-aplicação-no-applicationproperties">Configurar aplicação no application.properties</a><br>  
+• <a href="#-vamos-executar-o-projeto">Vamos executar o projeto</a><br> 
 </p>
 
 <h1 align="center">
