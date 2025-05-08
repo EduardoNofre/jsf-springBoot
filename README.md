@@ -319,5 +319,28 @@ Vejamos o POM.xml apos a criação como esta?<br>
             </h:body>
             </html>
 
+<h1 align="center">
+  Configurar aplicação no application.properties
+</h1>h1>
+
+Ai vai do seu gosto usar **.properties** ou **.Yaml**.
+Mas para este exemplo será usado um **.properties**
+
+Abaixo explico o que cada linhas faz:
+
+            # Ignora comentários no código XHTML para melhorar performance de renderização
+            joinfaces.servlet.initial-parameters.faces-config.FACELETS_SKIP_COMMENTS=true
+            
+            # Define o mapeamento das páginas JSF para terminarem com .xhtml
+            joinfaces.faces-servlet-mapping=*.xhtml
+            
+            # Define que os arquivos com extensão .xhtml são tratados como páginas JSF
+            joinfaces.faces-view-suffix=.xhtml
+            
+            # Define o tema visual do PrimeFaces (neste caso, "saga", que é um tema moderno e claro)
+            joinfaces.primefaces.theme=saga
+            
+            # Habilita o uso do Font Awesome nos componentes do PrimeFaces (ícones)
+            joinfaces.primefaces.font-awesome=true
 
 
