@@ -423,7 +423,10 @@ Abaixo explico o que cada linhas faz:
 ## Via eclipse..<br> 
   - **botão Direito no projeto > Run AS > Spring boot app**.<br>
     
-## Imagem
+## Gif
+<p align="center">
+  <img src="https://github.com/EduardoNofre/jsf-springBoot/blob/main/spring0101srun.gif" alt="Sublime's custom image"/>  
+</p>
 
 ## Via linha de comando Maven.
   - **botão Direito no projeto > show in Local Terminal**
