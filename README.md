@@ -348,4 +348,21 @@ Abaixo explico o que cada linhas faz:
             # Habilita o uso do Font Awesome nos componentes do PrimeFaces (ícones)
             joinfaces.primefaces.font-awesome=true
 
+  ## Imagem .properties e sua localização:
+<p align="center">
+  <img src="https://github.com/EduardoNofre/jsf-springBoot/blob/main/propert01.png" alt="Sublime's custom image"/>  
+</p>
 
+<h1 align="center">
+ Vamos executar o projeto
+</h1>h1>
+ - Podemos executar de duas manieras
+   - Via eclipse
+   - Via linha de comando Maven
+   
+## Via eclipse.
+  - **botão Direito no projeto > Run AS > Spring boot app**
+## Imagem
+
+## Via linha de comando Maven.
+  - **botão Direito no projeto > show in Local Terminal**
