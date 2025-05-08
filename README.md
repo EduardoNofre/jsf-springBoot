@@ -101,7 +101,7 @@ Projeto passo a passo jsf.<br>
 
 ## Estrutura do projeto 03.
 <p align="center">
-  <img src="https://github.com/EduardoNofre/jsf-springBoot/blob/main/02.png" alt="Sublime's custom image"/>  
+  <img src="https://github.com/EduardoNofre/jsf-springBoot/blob/main/003.png" alt="Sublime's custom image"/>  
 </p>
 
 
