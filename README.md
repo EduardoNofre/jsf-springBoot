@@ -356,13 +356,16 @@ Abaixo explico o que cada linhas faz:
 <h1 align="center">
  Vamos executar o projeto
 </h1>h1>
- - Podemos executar de duas manieras
-   - Via eclipse
-   - Via linha de comando Maven
+ - Podemos executar de duas manieras.<br>  
+   - Via eclipse.<br> 
+   - Via linha de comando Maven.<br> 
    
-## Via eclipse.
-  - **botão Direito no projeto > Run AS > Spring boot app**
+## Via eclipse..<br> 
+  - **botão Direito no projeto > Run AS > Spring boot app**.<br>
+    
 ## Imagem
 
 ## Via linha de comando Maven.
   - **botão Direito no projeto > show in Local Terminal**
+  - 
+## Imagem
