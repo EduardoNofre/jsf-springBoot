@@ -89,6 +89,16 @@ Projeto passo a passo jsf.<br>
     - Packaging: jar
     - Dependencies: Adicione apenas Spring Web (o resto vamos configurar manualmente).
 
+## imagem exemplo 01.
+<p align="center">
+  <img src="https://github.com/EduardoNofre/jsf-springBoot/blob/main/01.png" alt="Sublime's custom image"/>  
+</p>
+
+## imagem exemplo 02.
+<p align="center">
+  <img src="https://github.com/EduardoNofre/jsf-springBoot/blob/main/02.png" alt="Sublime's custom image"/>  
+</p>
+
 ## Configurando o pom.xml
 
 Configurar o pom.xml com JoinFaces e PrimeFaces
