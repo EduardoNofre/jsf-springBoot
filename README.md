@@ -169,6 +169,7 @@ Vejamos o POM.xml apos a criação como esta?<br>
 
 ## Vamos incluir algumas libs/dependencias.<br>
   - São elas:
+      - thymeleaf
       - JoinFaces (inclui JSF, CDI e PrimeFaces) 
       - JSF Bean Management (CDI) 
       - Servlet API 
@@ -209,6 +210,12 @@ Vejamos o POM.xml apos a criação como esta?<br>
             			<artifactId>spring-boot-starter-test</artifactId>
             			<scope>test</scope>
             		</dependency>
+              
+                <!-- thymeleaf -->
+              	<dependency>
+  			          <groupId>org.springframework.boot</groupId>
+  			          <artifactId>spring-boot-starter-thymeleaf</artifactId>
+		            </dependency>
             
             		<!-- JoinFaces (inclui JSF, CDI e PrimeFaces) -->
             		<dependency>
