@@ -107,4 +107,63 @@ Projeto passo a passo jsf.<br>
 
 ## Configurando o pom.xml
 
-Configurar o pom.xml com JoinFaces e PrimeFaces
+Configurar o pom.xml com JoinFaces e PrimeFaces.
+
+Vejamos o POM.xml apos a criação como esta?
+
+Antes da inclusão de algumas libs/dependencias.<br>
+
+              <?xml version="1.0" encoding="UTF-8"?>
+              <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+              	<modelVersion>4.0.0</modelVersion>
+              	<parent>
+              		<groupId>org.springframework.boot</groupId>
+              		<artifactId>spring-boot-starter-parent</artifactId>
+              		<version>3.4.5</version>
+              		<relativePath/> <!-- lookup parent from repository -->
+              	</parent>
+              	<groupId>br.com.JoinFaces.app</groupId>
+              	<artifactId>HelloWorld-JoinFaces</artifactId>
+              	<version>1.0.0</version>
+              	<name>HelloWorld-JoinFaces</name>
+              	<description>HelloWorld-JoinFaces estudo join faces</description>
+              	<url/>
+              	<licenses>
+              		<license/>
+              	</licenses>
+              	<developers>
+              		<developer/>
+              	</developers>
+              	<scm>
+              		<connection/>
+              		<developerConnection/>
+              		<tag/>
+              		<url/>
+              	</scm>
+              	<properties>
+              		<java.version>17</java.version>
+              	</properties>
+              	<dependencies>
+              		<dependency>
+              			<groupId>org.springframework.boot</groupId>
+              			<artifactId>spring-boot-starter-web</artifactId>
+              		</dependency>
+              
+              		<dependency>
+              			<groupId>org.springframework.boot</groupId>
+              			<artifactId>spring-boot-starter-test</artifactId>
+              			<scope>test</scope>
+              		</dependency>
+              	</dependencies>
+              
+              	<build>
+              		<plugins>
+              			<plugin>
+              				<groupId>org.springframework.boot</groupId>
+              				<artifactId>spring-boot-maven-plugin</artifactId>
+              			</plugin>
+              		</plugins>
+              	</build>
+              </project>
+
