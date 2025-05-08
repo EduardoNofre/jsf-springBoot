@@ -89,6 +89,6 @@ Projeto passo a passo jsf.<br>
     - Packaging: jar
     - Dependencies: Adicione apenas Spring Web (o resto vamos configurar manualmente).
 
-## Configurar o pom.xml
+## Configurando o pom.xml
 
 Configurar o pom.xml com JoinFaces e PrimeFaces
