@@ -176,80 +176,122 @@ Vejamos o POM.xml apos a criação como esta?<br>
 
 ## Veja como ficou o POM.xml
 
-            <?xml version="1.0" encoding="UTF-8"?>
-            <project xmlns="http://maven.apache.org/POM/4.0.0"
-            	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-            	<modelVersion>4.0.0</modelVersion>
-            	
-            	<parent>
-            		<groupId>org.springframework.boot</groupId>
-            		<artifactId>spring-boot-starter-parent</artifactId>
-            		<version>3.4.5</version>
-            		<relativePath /> <!-- lookup parent from repository -->
-            	</parent>
-            	
-            	<groupId>br.com.JoinFaces.app</groupId>
-            	<artifactId>HelloWorld-JoinFaces</artifactId>
-            	<version>1.0.0</version>
-            	<name>HelloWorld-JoinFaces</name>
-            	<description>HelloWorld-JoinFaces estudo join faces</description>
-            
-            	<properties>
-            		<java.version>17</java.version>
-               <joinfaces.version>5.0.0</joinfaces.version>
-            	</properties>
-            	<dependencies>
-            		<dependency>
-            			<groupId>org.springframework.boot</groupId>
-            			<artifactId>spring-boot-starter-web</artifactId>
-            		</dependency>
-            
-            		<dependency>
-            			<groupId>org.springframework.boot</groupId>
-            			<artifactId>spring-boot-starter-test</artifactId>
-            			<scope>test</scope>
-            		</dependency>
-              
-                <!-- thymeleaf -->
-              	<dependency>
-  			          <groupId>org.springframework.boot</groupId>
-  			          <artifactId>spring-boot-starter-thymeleaf</artifactId>
-		            </dependency>
-            
-            		<!-- JoinFaces (inclui JSF, CDI e PrimeFaces) -->
-            		<dependency>
-            			<groupId>org.joinfaces</groupId>
-            			<artifactId>joinfaces</artifactId>
-            		</dependency>
-            
-            		<!-- JSF Bean Management (CDI) -->
-            		<dependency>
-            			<groupId>jakarta.enterprise</groupId>
-            			<artifactId>jakarta.enterprise.cdi-api</artifactId>
-            			<version>4.0.1</version>
-            			<scope>provided</scope>
-            		</dependency>
-            
-            		<!-- Servlet API -->
-            		<dependency>
-            			<groupId>jakarta.servlet</groupId>
-            			<artifactId>jakarta.servlet-api</artifactId>
-            			<version>6.0.0</version>
-            			<scope>provided</scope>
-            		</dependency>
-            
-            	</dependencies>
-            
-            	<build>
-            		<plugins>
-            			<plugin>
-            				<groupId>org.springframework.boot</groupId>
-            				<artifactId>spring-boot-maven-plugin</artifactId>
-            			</plugin>
-            		</plugins>
-            	</build>
-            </project>
+		        <project xmlns="http://maven.apache.org/POM/4.0.0"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+		
+			<modelVersion>4.0.0</modelVersion>
+		
+			<parent>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-parent</artifactId>
+				<version>3.4.5</version>
+				<relativePath /> <!-- lookup parent from repository -->
+			</parent>
+		
+			<groupId>br.com.JoinFaces.app</groupId>
+			<artifactId>HelloWorld-JoinFaces</artifactId>
+			<version>1.0.0</version>
+			<name>HelloWorld-JoinFaces</name>
+			<description>HelloWorld-JoinFaces estudo join faces</description>
+		
+			<properties>
+				<java.version>17</java.version>
+				<joinfaces.version>5.0.0</joinfaces.version>
+				<spring-cloud.version>2024.0.1</spring-cloud.version>
+			</properties>
+		
+			<dependencies>
+				<!-- Spring Boot -->
+				<dependency>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-web</artifactId>
+				</dependency>
+		
+				<dependency>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-test</artifactId>
+					<scope>test</scope>
+				</dependency>
+		
+				<!--  projectlombok -->
+				<dependency>
+					<groupId>org.projectlombok</groupId>
+					<artifactId>lombok</artifactId>
+					<optional>true</optional>
+				</dependency>
+		
+				<!-- JoinFaces para integração com JSF + Spring Boot -->
+				<dependency>
+					<groupId>org.joinfaces</groupId>
+					<artifactId>jsf-spring-boot-starter</artifactId>
+					<version>${joinfaces.version}</version>
+				</dependency>
+		
+				<!-- PrimeFaces -->
+				<dependency>
+					<groupId>org.joinfaces</groupId>
+					<artifactId>primefaces-spring-boot-starter</artifactId>
+					<version>${joinfaces.version}</version>
+				</dependency>
+		
+				<!-- JSF Bean Management (CDI) -->
+				<dependency>
+					<groupId>jakarta.enterprise</groupId>
+					<artifactId>jakarta.enterprise.cdi-api</artifactId>
+					<version>4.0.1</version>
+					<scope>provided</scope>
+				</dependency>
+		
+				<!-- thymeleaf -->
+				<dependency>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-thymeleaf</artifactId>
+				</dependency>
+			</dependencies>
+		
+			<dependencyManagement>
+				<dependencies>
+					<dependency>
+						<groupId>org.springframework.cloud</groupId>
+						<artifactId>spring-cloud-dependencies</artifactId>
+						<version>${spring-cloud.version}</version>
+						<type>pom</type>
+						<scope>import</scope>
+					</dependency>
+				</dependencies>
+			</dependencyManagement>
+		
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-compiler-plugin</artifactId>
+						<configuration>
+							<annotationProcessorPaths>
+								<path>
+									<groupId>org.projectlombok</groupId>
+									<artifactId>lombok</artifactId>
+								</path>
+							</annotationProcessorPaths>
+						</configuration>
+					</plugin>
+					<plugin>
+						<groupId>org.springframework.boot</groupId>
+						<artifactId>spring-boot-maven-plugin</artifactId>
+						<configuration>
+							<excludes>
+								<exclude>
+									<groupId>org.projectlombok</groupId>
+									<artifactId>lombok</artifactId>
+								</exclude>
+							</excludes>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</project>
+
             
 
 <h1 align="center">
@@ -266,28 +308,30 @@ Vejamos o POM.xml apos a criação como esta?<br>
       
   **A classe:** 
     
-              package br.com.JoinFaces.app.bean;
-              
-              import jakarta.enterprise.context.RequestScoped;
-              import jakarta.inject.Named;
-              
-              @Named
-              @RequestScoped
-              public class HelloWorldBean {
-                  private String nome;
-              
-                  public void enviar() {
-                      System.out.println("Nome Exibido: " + nome);
-                  }
-              
-                  public String getNome() {
-                      return nome;
-                  }
-              
-                  public void setNome(String nome) {
-                      this.nome = nome;
-                  }
-              }
+              	package br.com.JoinFaces.app.bean;
+
+		import jakarta.enterprise.context.RequestScoped;
+		import jakarta.inject.Named;
+		
+		@Named("helloWorldBean")
+		@RequestScoped
+		public class HelloWorldBean {
+		    private String nome;
+		
+		    public String saudacao() {
+			return "Nome recebido: " + nome + "!";
+		    }
+		
+		
+		    public String getNome() {
+			return nome;
+		    }
+		
+		    public void setNome(String nome) {
+			this.nome = nome;
+		    }
+		}
+
 
   - **Deve ficar dentro src/main/java/br/com/JoinFaces/app/bean/HelloWorldBean.java**
 
@@ -310,23 +354,21 @@ Vejamos o POM.xml apos a criação como esta?<br>
 
  **A pagina:** 
 
-            <!DOCTYPE html>
-            <html xmlns="http://www.w3.org/1999/xhtml"
-                  xmlns:h="jakarta.faces.html"
-                  xmlns:p="http://primefaces.org/ui">
-            <h:head>
-                <title>Página JSF com Spring Boot Hello World</title>
-            </h:head>
-            <h:body>
-                <h:form>
-                    <p:outputLabel value="Nome:" for="nome" />
-                    <p:inputText id="nome" value="#{helloBean.nome}" />
-                    <p:commandButton value="Enviar" action="#{helloBean.enviar}" update="@form" />
-                    <br/><br/>
-                    <p:outputLabel value="Digite qaulquer coisa aqui: #{helloBean.nome}" />
-                </h:form>
-            </h:body>
-            </html>
+		<!DOCTYPE html>
+		<html xmlns="http://www.w3.org/1999/xhtml"
+		      xmlns:h="http://xmlns.jcp.org/jsf/html"
+		      xmlns:p="http://primefaces.org/ui">
+		<h:head>
+		    <title>Exemplo JSF</title>
+		</h:head>
+		<h:body>
+		    <h:form>
+		        <p:inputText value="#{helloWorldBean.nome}" placeholder="Digite seu nome" />
+		        <p:commandButton value="Dizer olá" update="mensagem" action="#{helloWorldBean.saudacao}" />
+		        <h:outputText id="mensagem" value="#{helloWorldBean.saudacao()}" />
+		    </h:form>
+		</h:body>
+		</html>
 
   ## Imagem da estrutura:
 <p align="center">
