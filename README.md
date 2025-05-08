@@ -423,12 +423,25 @@ Abaixo explico o que cada linhas faz:
 ## Via eclipse..<br> 
   - **botão Direito no projeto > Run AS > Spring boot app**.<br>
     
-## Gif
+## Gif.
 <p align="center">
   <img src="https://github.com/EduardoNofre/jsf-springBoot/blob/main/spring0101srun.gif" alt="Sublime's custom image"/>  
 </p>
 
 ## Via linha de comando Maven.
   - **botão Direito no projeto > show in Local Terminal**
-  - 
-## Imagem
+
+    
+## Gif.
+<p align="center">
+  <img src="https://github.com/EduardoNofre/jsf-springBoot/blob/main/springterminalrun.gif" alt="Sublime's custom image"/>  
+</p>
+
+## Para testar a aplicação use a URL abaixo em seu browser.
+  **http://localhost:8090/hello-world/index.xhtml**
+
+## A saida deve ser algo assim.
+
+<p align="center">
+  <img src="https://github.com/EduardoNofre/jsf-springBoot/blob/main/springterminalrun.gif" alt="Sublime's custom image"/>  
+</p>
