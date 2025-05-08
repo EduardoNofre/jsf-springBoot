@@ -167,7 +167,7 @@ Vejamos o POM.xml apos a criação como esta?<br>
               </project>
 
 ## Vamos incluir algumas libs/dependencias.<br>
-São elas:
+  - São elas:
       - JoinFaces (inclui JSF, CDI e PrimeFaces) 
       - JSF Bean Management (CDI) 
       - Servlet API 
