@@ -320,7 +320,7 @@ Vejamos o POM.xml apos a criação como esta?<br>
             </html>
 
   ## Imagem da estrutura:
-  <p align="center">
+<p align="center">
   <img src="https://github.com/EduardoNofre/jsf-springBoot/blob/main/pagina.png" alt="Sublime's custom image"/>  
 </p>
 
