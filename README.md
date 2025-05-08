@@ -65,25 +65,30 @@ Facilita a criação de projetos spring boot com JSF evita configuração comple
    Requisito mínimo antes de começa.
 </h1>
 
-Projeto passo a passo jsf.
-  - Projeto spring starter
-  - Java 17 +
-  - spring boot 3.4.5
-  - Eclipse STS 4.22
-  - JoinFaces
-  - Pagina jsf.
-  - Classe bean utilizando @Named e @RequestScoped.
-  - Utilizando o tomcat do proprio spring boot.
+Projeto passo a passo jsf.<br>
+  - Projeto spring starter<br>
+  - Java 17 +<br>
+  - spring boot 3.4.5<br>
+  - Eclipse STS 4.22<br>
+  - JoinFaces<br>
+  - Pagina jsf.<br>
+  - Classe bean utilizando @Named e @RequestScoped.<br>
+  - Utilizando o tomcat do proprio spring boot.<br>
 
 <h1 align="center">
    HelloWorld-JoinFaces
 </h1>
 
-## Projeto spring starter + Eclipse STS
-  - Abra o seu Eclipse STS
-  - Vá em: File > New > Spring Starter Project
+## Projeto spring starter + Eclipse STS<br>
+  - Abra o seu Eclipse STS<br>
+  - Vá em: File > New > Spring Starter Project<br>
   - Preencha:
-    - Name: demo-jsf
+    - Name: HelloWorld-JoinFaces
     - Type: Maven
     - Java Version: 17+
     - Packaging: jar
+    - Dependencies: Adicione apenas Spring Web (o resto vamos configurar manualmente).
+
+## Configurar o pom.xml
+
+Configurar o pom.xml com JoinFaces e PrimeFaces
