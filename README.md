@@ -91,7 +91,7 @@ Projeto passo a passo jsf.<br>
 
 ## imagem exemplo 01.
 <p align="center">
-  <img src="https://github.com/EduardoNofre/jsf-springBoot/blob/main/01.png" alt="Sublime's custom image"/>  
+  <img src="https://github.com/EduardoNofre/jsf-springBoot/blob/main/01.png" alt="Sublime's custom image"/>   
 </p>
 
 ## imagem exemplo 02.
