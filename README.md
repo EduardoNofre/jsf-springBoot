@@ -173,7 +173,8 @@ Vejamos o POM.xml apos a criação como esta?<br>
       - thymeleaf
       - JoinFaces (inclui JSF, CDI e PrimeFaces) 
       - JSF Bean Management (CDI) 
-      - Servlet API 
+      - Servlet API
+      - PrimeFaces 
 
 ## Veja como ficou o POM.xml
 
